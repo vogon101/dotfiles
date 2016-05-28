@@ -197,6 +197,8 @@ alias meminfo='echo "FreeMemory : ";freemem; echo " UsedMemory : "; usedmem'
 
 alias :q='exit'
 
+alias docker='sudo docker'
+
 transfer() { 
     # check arguments
     if [ $# -eq 0 ]; 
@@ -246,9 +248,17 @@ transfer() {
 
 build_prompt () {
     BASE="\e[0;"
-    HEAD="m[\u@\h, load: `cat /proc/loadavg | awk '{ print $1; }'`%]\e[0;97m (\d - \t) \w \$ "
+    HEAD="m[\u@\h, load: `cat /proc/loadavg | awk '{ print $1; }'`%]\e[0;97m \w \$ "
     FINAL=$BASE$1$HEAD
     PS1=$FINAL
 }
 
 build_prompt 32
+
+where () {
+    find "$1" -xdev -name "$2"
+}
+
+smallPrompt(){
+    PS1="\w>"
+}
