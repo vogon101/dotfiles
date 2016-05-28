@@ -199,6 +199,8 @@ alias :q='exit'
 
 alias docker='sudo docker'
 
+alias version='lsb_release -a'
+
 transfer() { 
     # check arguments
     if [ $# -eq 0 ]; 
