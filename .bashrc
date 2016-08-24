@@ -175,11 +175,11 @@ echo -e "\n\n\n"
 figlet "Freddie Poser"
 
 
-echo -e "Freddie Poser's kubuntu laptop"
+echo -e "Freddie Poser's Bash Shell"
 echo -e "\n\n\n"
 
 #echo "Welcome to BluePost1"
-echo "This laptop is owned by Freddie Poser"
+echo "This computer is owned by Freddie Poser"
 
 echo -e  "#========================================================#"
 echo -e  "> Uptime      : \c"; uptime # Has extra space before uprime so one back :(
@@ -187,7 +187,7 @@ echo -e  "> Free Memory :  \c"; free | awk 'FNR == 3 {print $4/($3+$4)*100}' | t
 echo -e  "#========================================================#"
 
 
-echo -e "\nIf you are accessing this laptop without permission you are breaking the law\n\nWe don't like people who break the law"
+echo -e "\nIf you are accessing this compuer without permission you are breaking the law\n\nWe don't like people who break the law"
 
 
 alias cls="clear;ls"
@@ -255,7 +255,7 @@ build_prompt () {
     PS1=$FINAL
 }
 
-build_prompt 32
+#build_prompt 32
 
 where () {
     find "$1" -xdev -name "$2"
@@ -264,3 +264,5 @@ where () {
 smallPrompt(){
     PS1="\w>"
 }
+
+alias cl="c;l;"
