@@ -120,5 +120,6 @@ build_prompt 32
 
 if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
     GIT_PROMPT_ONLY_IN_REPO=1
+    echo "[ Module Loaded ] bash-git-prompt"
     source $HOME/.bash-git-prompt/gitprompt.sh
 fi
