@@ -1,0 +1,5 @@
+#!/bin/bash
+WIN_INSTALL=true
+WIN_C_DRIVE="/mnt/c"
+WIN_USER_DIR="$WIN_C_DRIVE/Users/fredd"
+WIN_GOOGLE_DRIVE=$WIN_USER_DIR/Google\ Drive

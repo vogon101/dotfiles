@@ -91,7 +91,13 @@ fi
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
+if [ -f ~/.bash_settings ]; then 
+    echo "[ File Loaded ] bash_settings"
+    . ~/.bash_settings
+fi
+
 if [ -f ~/.bash_aliases ]; then
+    echo "[ File Loaded ] bash_aliases"
     . ~/.bash_aliases
 fi
 
