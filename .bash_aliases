@@ -127,9 +127,9 @@ transfer() {
 }
 
 build_prompt () {
-    BASE="\e[0;"
+    BASE="\[\e["
     #HEAD="m[\u@\h, load: `cat /proc/loadavg | awk '{ print $1; }'`%]\e[0;97m \w \$ "
-    HEAD="m[\u@\h]\e[0;97m \w \$ "
+    HEAD="m\][\u@\h]\[\e[97m\] \w \$ "
     FINAL=$BASE$1$HEAD
     PS1=$FINAL
 }
