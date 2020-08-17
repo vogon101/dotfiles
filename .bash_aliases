@@ -145,3 +145,7 @@ smallPrompt(){
 
 alias cl="c;l;"
 alias cls="c;ls;"
+if [ "$WIN_INSTALL" = true ] ; then 
+    alias cdc="cd $WIN_C_DRIVE"
+    alias cdgdrive='cd "$WIN_GOOGLE_DRIVE"'
+fi
