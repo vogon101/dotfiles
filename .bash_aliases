@@ -75,7 +75,6 @@ alias meminfo='echo "FreeMemory : ";freemem; echo " UsedMemory : "; usedmem'
 
 alias :q='exit'
 
-alias docker='sudo docker'
 
 alias version='lsb_release -a'
 
